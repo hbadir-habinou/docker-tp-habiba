@@ -1,0 +1,24 @@
+# Construction de l'image
+docker build -t habiba-flask-app .
+
+# Connexion à Docker Hub
+docker login
+
+# Taggage de l'image pour Docker Hub
+docker tag habiba-flask-app hbad/habiba-flask-app:latest
+
+# Pousser l'image sur Docker Hub
+docker push hbad/habiba-flask-app:latest
+
+# Reconstruction de l'image après correction
+docker build -t habiba-flask-app .
+
+# Lancement du conteneur
+docker run -p 5000:5000 habiba-flask-app
+
+# Supprime l'image existante
+docker rmi habiba-flask-app
+
+
+# Pour afficher l'image en local 
+http://localhost:5000
