@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Ajout des fichiers pour le TP Docker"
+git remote add origin https://github.com/hbadir-habinou/docker-tp-habiba.git
+git branch -M main
+git push -u origin main

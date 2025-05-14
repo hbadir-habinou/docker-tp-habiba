@@ -1,0 +1,199 @@
+/* Importation d'une police moderne via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Styles globaux */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(90deg, #1a3c6d, #2a5b9e);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation de fade-in pour les sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Accueil */
+#accueil {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#accueil h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1a3c6d;
+    margin-bottom: 20px;
+}
+
+#accueil p.lead {
+    font-size: 1.5rem;
+    color: #2a5b9e;
+}
+
+/* Section Services */
+#services {
+    background-color: #fff;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a3c6d;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2a5b9e;
+}
+
+.card-text {
+    color: #666;
+}
+
+/* Section À propos */
+#apropos {
+    background: linear-gradient(135deg, #f0f4f8, #d1e0f0);
+}
+
+#apropos h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a3c6d;
+}
+
+#apropos p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* Section Contact */
+#contact {
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a3c6d;
+    margin-bottom: 40px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2a5b9e;
+    box-shadow: 0 0 8px rgba(42, 91, 158, 0.2);
+}
+
+.btn-primary {
+    background-color: #2a5b9e;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1a3c6d;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #1a3c6d, #2a5b9e);
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #accueil h1 {
+        font-size: 2rem;
+    }
+
+    #accueil p.lead {
+        font-size: 1.2rem;
+    }
+
+    #services h2,
+    #apropos h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
